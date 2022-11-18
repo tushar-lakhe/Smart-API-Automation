@@ -1,0 +1,7 @@
+17:11:49.556 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:11:53.916 [pool-1-thread-1] ERROR com.intuit.karate - classpath:examples/users/test_cases/api/rest_Test_case_01.feature:13
+Then status 200
+status code was: 415, expected: 200, response time in milliseconds: 2149, url: https://anypoint.mulesoft.com/mocking/api/v1/sources/exchange/assets/fd604b43-365c-42e8-810f-733a2b7f411f/american-flights-api/2.0.1/m/flights?destination=SFO, response: 
+{"code":"INVALID_RESPONSE_ACCEPT_HEADER","message":"Error trying to find response for invalid media type"}
+classpath:examples/users/test_cases/api/rest_Test_case_01.feature:13
+17:11:56.691 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<fail>> feature 1 of 1 (0 remaining) classpath:examples/users/test_cases/api/rest_Test_case_01.feature

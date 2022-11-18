@@ -1,0 +1,138 @@
+[
+    {
+        "test_case_id": "rest_Test_case_01",
+        "url": "https:\/\/anypoint.mulesoft.com\/mocking\/api\/v1\/sources\/exchange\/assets\/fd604b43-365c-42e8-810f-733a2b7f411f\/american-flights-api\/2.0.1\/m\/flights?destination=SFO",
+        "method": "GET",
+        "status": 200,
+        "headers": "{'client_id': 'ea3de08abe424c47a5cb157366741538','client_secret': '7cFf22441B4441FE91E6F31cFA0bE6F3'}",
+        "execution_flag": "Api",
+        "json_payload": "None",
+        "number_of_concurrent_users": null,
+        "duration_of_run_in_seconds": null
+    },
+    {
+        "test_case_id": "rest_Test_case_02",
+        "url": "https:\/\/api-us-aws-uat2.takeda.com\/uat\/gcc-hcpservices-aws-sys\/v1\/getHCPUserTerritoryInfo?takedaId=DE-TAK-P-0011p00002jaCBzAAM&countryCode=BE&profiles=TPI%20KAM%20Specialist,%20TPI%20MSL",
+        "method": "GET",
+        "status": 500,
+        "headers": "{'client_id': 'ea3de08abe424c47a5cb157366741538','client_secret': '7cFf22441B4441FE91E6F31cFA0bE6F3'}",
+        "execution_flag": "No",
+        "json_payload": "None",
+        "number_of_concurrent_users": 4,
+        "duration_of_run_in_seconds": 10
+    },
+    {
+        "test_case_id": "rest_Test_case_03",
+        "url": "https:\/\/api-us-aws-uat2.takeda.com\/uat\/gcc-omnichannel-api\/v1\/consentReceipt?detailedResponse=true&takedaId=CA-TAK-P-0012400001Dx1ZsAAJ",
+        "method": "GET",
+        "status": 200,
+        "headers": "{'client_id': '116821b5dd12426f81c471cb1612c82b', 'client_secret': '82FD53E3b9dA434Eb2b9e9f6Da20E8d7', 'Content-Type': 'application\/json'}",
+        "execution_flag": "No",
+        "json_payload": "None",
+        "number_of_concurrent_users": 3,
+        "duration_of_run_in_seconds": 10
+    },
+    {
+        "test_case_id": "rest_Test_case_04",
+        "url": "https:\/\/api-us-aws-uat2.takeda.com\/uat\/gca-investorsignup-api\/v1\/investor\/signup",
+        "method": "POST",
+        "status": 201,
+        "headers": "{'client_id': '6fbe28135b1c4e10a0b10dccb21889f3', 'client_secret': '7a35C5150CE7404CAeF0492274024ef8'}",
+        "execution_flag": "No",
+        "json_payload": "{     'id': 'e3be2fba15a2452cb28bf1b08bd7',     'emailAddress': 'pratyush.gupta@takeda.com',     'firstName': 'Suzuki',     'lastName': 'Snow',     'typeRetail': false,     'typeInstitutional': false,     'typeOther': false,     'typeMedia': true,     'company': 'NetStreet',     'prefPressRelease': false,     'prefQE': false,     'prefEvents': false,     'prefStories': false,     'language': 'JP'   }",
+        "number_of_concurrent_users": 2,
+        "duration_of_run_in_seconds": 10
+    },
+    {
+        "test_case_id": "rest_Test_case_05",
+        "url": "https:\/\/reqres.in\/api\/users\/2",
+        "method": "PUT",
+        "status": 200,
+        "headers": null,
+        "execution_flag": "No",
+        "json_payload": "{     \"name\": \"morpheus\",     \"job\": \"zion resident\" }",
+        "number_of_concurrent_users": null,
+        "duration_of_run_in_seconds": null
+    },
+    {
+        "test_case_id": "rest_Test_case_06",
+        "url": "https:\/\/jsonplaceholder.typicode.com\/users",
+        "method": "POST",
+        "status": 201,
+        "headers": null,
+        "execution_flag": "No",
+        "json_payload": "{   'id': '11',   'name': 'testuser',   'username': 'testuser',   'email': 'testuser@gmail.com',   'address': {     'street': '12133',     'suite': '11',     'city': 'Bellevue',     'zipcode': '98005'   } }",
+        "number_of_concurrent_users": null,
+        "duration_of_run_in_seconds": null
+    },
+    {
+        "test_case_id": "rest_Test_case_07",
+        "url": "https:\/\/api-us-aws-uat2.takeda.com\/uat\/gcc-omnichannel-api\/v1\/consentReceipt?detailedResponse=true&takedaId=CA-TAK-P-0012400001Dx1ZsAAJ",
+        "method": "GET",
+        "status": 200,
+        "headers": "{'client_id': '116821b5dd12426f81c471cb1612c82b', 'client_secret': '82FD53E3b9dA434Eb2b9e9f6Da20E8d7', 'Content-Type': 'application\/json'}",
+        "execution_flag": "No",
+        "json_payload": "None",
+        "number_of_concurrent_users": 3,
+        "duration_of_run_in_seconds": 10
+    },
+    {
+        "test_case_id": "rest_Test_case_08",
+        "url": "https:\/\/api-us-aws-uat2.takeda.com\/uat\/gca-investorsignup-api\/v1\/investor\/signup",
+        "method": "POST",
+        "status": 500,
+        "headers": "{'client_id': '6fbe28135b1c4e10a0b10dccb21889f3', 'client_secret': '7a35C5150CE7404CAeF0492274024ef8'}",
+        "execution_flag": "No",
+        "json_payload": "{     'id': 'e3be2fba15a2452cb28bf1b08bd7',     'emailAddress': 'pratyush.gupta@takeda.com',     'firstName': 'Suzuki',     'lastName': 'Snow',     'typeRetail': false,     'typeInstitutional': false,     'typeOther': false,     'typeMedia': true,     'company': 'NetStreet',     'prefPressRelease': false,     'prefQE': false,     'prefEvents': false,     'prefStories': false,     'language': 'JP'   }",
+        "number_of_concurrent_users": null,
+        "duration_of_run_in_seconds": null
+    },
+    {
+        "test_case_id": "rest_Test_case_09",
+        "url": "https:\/\/reqres.in\/api\/users\/2",
+        "method": "PUT",
+        "status": 500,
+        "headers": null,
+        "execution_flag": "No",
+        "json_payload": "{     \"name\": \"morpheus\",     \"job\": \"zion resident\" }",
+        "number_of_concurrent_users": null,
+        "duration_of_run_in_seconds": null
+    },
+    {
+        "test_case_id": "rest_Test_case_10",
+        "url": "https:\/\/jsonplaceholder.typicode.com\/users",
+        "method": "POST",
+        "status": 100,
+        "headers": null,
+        "execution_flag": "No",
+        "json_payload": "{   'id': '11',   'name': 'testuser',   'username': 'testuser',   'email': 'testuser@gmail.com',   'address': {     'street': '12133',     'suite': '11',     'city': 'Bellevue',     'zipcode': '98005'   } }",
+        "number_of_concurrent_users": null,
+        "duration_of_run_in_seconds": null
+    },
+    {
+        "test_case_id": "ems_Test_case_id_1",
+        "url": "127.0.0.1:9092",
+        "username": "broker-admin",
+        "password": "abcd123",
+        "json_payload": "Hello Apache Kafka ",
+        "queue_type": "kafka_mq",
+        "execution_flag": "No",
+        "queue_name": "test-sendemail",
+        "mq_message_type": "TextMessage",
+        "number_of_concurrent_users": 10,
+        "duration_of_run_in_seconds": 4
+    },
+    {
+        "test_case_id": "ems_Test_case_id_2",
+        "url": "tcp:\/\/localhost:61616",
+        "username": "admin",
+        "password": "admin",
+        "json_payload": "Test Message on Active MQ",
+        "queue_type": "active_mq",
+        "execution_flag": "No",
+        "queue_name": "Test_queue",
+        "mq_message_type": "TextMessage",
+        "number_of_concurrent_users": 5,
+        "duration_of_run_in_seconds": 10
+    }
+]

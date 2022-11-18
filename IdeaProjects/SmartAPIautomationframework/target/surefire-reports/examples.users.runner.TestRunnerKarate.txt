@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: examples.users.runner.TestRunnerKarate
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 21.091 s <<< FAILURE! - in examples.users.runner.TestRunnerKarate
+testParallel  Time elapsed: 21.082 s  <<< FAILURE!
+java.lang.AssertionError: 
+status code was: 415, expected: 200, response time in milliseconds: 2149, url: https://anypoint.mulesoft.com/mocking/api/v1/sources/exchange/assets/fd604b43-365c-42e8-810f-733a2b7f411f/american-flights-api/2.0.1/m/flights?destination=SFO, response: 
+{"code":"INVALID_RESPONSE_ACCEPT_HEADER","message":"Error trying to find response for invalid media type"}
+classpath:examples/users/test_cases/api/rest_Test_case_01.feature:13
+	at examples.users.runner.TestRunnerKarate.testParallel(TestRunnerKarate.java:22)
+

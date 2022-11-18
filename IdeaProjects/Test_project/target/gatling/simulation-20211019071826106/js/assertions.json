@@ -1,0 +1,10 @@
+{
+  "simulation": "examples.users.simulation_files.simulation",
+  "simulationId": "simulation",
+  "start": 1634627906106,
+  "description": "",
+  "scenarios": ["r_Test_case_01", "r_Test_case_02", "r_Test_case_03"],
+  "assertions": [
+
+  ]
+}

@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: examples.users.runner.TestRunnerKarate
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 17.366 s <<< FAILURE! - in examples.users.runner.TestRunnerKarate
+testParallel  Time elapsed: 17.357 s  <<< FAILURE!
+java.lang.AssertionError: 
+status code was: 401, expected: 201, response time in milliseconds: 1779, url: https://api-us-aws-uat2.takeda.com/uat/gca-investorsignup-api/v1/investor/signup, response: 
+{
+  "error": "Invalid client id or secret"
+}
+classpath:examples/users/test_cases/r_Test_case_01.feature:13
+	at examples.users.runner.TestRunnerKarate.testParallel(TestRunnerKarate.java:22)
+

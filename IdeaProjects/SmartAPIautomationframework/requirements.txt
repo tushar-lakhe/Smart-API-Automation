@@ -1,0 +1,10 @@
+configparser==5.0.2
+DateTime==4.3
+et-xmlfile==1.1.0
+json-extensions==0.2.1
+openpyxl==3.0.7
+pytz==2021.1
+simplejson==3.17.5
+six==1.16.0
+ujson==4.1.0
+zope.interface==5.4.0
