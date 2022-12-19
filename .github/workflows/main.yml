@@ -1,7 +1,6 @@
 on: [push]
 jobs:
   build:
-  name: Hello world
   runs-on: windows-latest
   steps:
   - uses: actions/checkout@v2
