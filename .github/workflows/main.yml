@@ -22,8 +22,8 @@ jobs:
           run: |
                 pwd
                 ls
-                cd IdeaProjects
+                cd IdeaProjects/Smartapiautomationframework/src/test/java/examples/users/pythonController/
                 pwd
           
         - name: execute py script
-          run: python ./IdeaProjects/Smartapiautomationframework/src/test/java/examples/users/pythonController/DataValidators.py
+          run: python DataValidators.py
