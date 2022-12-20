@@ -26,4 +26,6 @@ jobs:
                 pwd
           
         - name: execute py script
-          run: python DataValidators.py
+          run: |
+                cd IdeaProjects/Smartapiautomationframework/src/test/java/examples/users/pythonController/
+                python DataValidators.py
