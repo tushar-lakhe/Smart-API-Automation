@@ -19,4 +19,4 @@ jobs:
             python-version: '3.9'
           
         - name: execute py script
-          run: python ../../src/test/java/examples/users/pythonController/DataValidators.py
+          run: python ../src/test/java/examples/users/pythonController/DataValidators.py
