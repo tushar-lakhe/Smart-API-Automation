@@ -24,4 +24,4 @@ jobs:
                 ls
           
         - name: execute py script
-          run: python 'Smart-API-Automation/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController/DataValidators.py'
+          run: python 'SmartAPIautomationframework/src/test/java/examples/users/pythonController/DataValidators.py'
