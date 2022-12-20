@@ -19,4 +19,4 @@ jobs:
             python-version: '3.9'
           
         - name: execute py script
-          run: python tushar-lakhe/Smart-API-Automation/tree/main/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController/DataValidators.py
+          run: python /tree/main/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController/DataValidators.py
