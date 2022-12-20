@@ -9,12 +9,12 @@ jobs:
     steps:
         
         - name: checkout repo content
-          uses: action/checkout@v2
+          uses: actions/checkout@v2
           with:
             repository: tushar-lakhe/Smart-API-Automation
           
         - name: setup python
-          uses: action/setup-python@v4
+          uses: actions/setup-python@v4
           with: 
             python-version: '3.9'
           
