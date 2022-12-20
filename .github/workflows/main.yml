@@ -22,6 +22,8 @@ jobs:
           run: |
                 pwd
                 ls
+                cd 
+                pwd
           
         - name: execute py script
           run: python Smartapiautomationframework\src\test\java\examples\users\pythonController\DataValidators.py
