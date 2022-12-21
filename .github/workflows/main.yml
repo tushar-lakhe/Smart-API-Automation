@@ -73,6 +73,7 @@ jobs:
             # Optional converting Markdown to HTML (set content_type to text/html too):
             convert_markdown: true
             # Optional attachments:
-            attachments: attachments.zip,git.diff,./target/gatling/simulation-20221221114326430/*
-            attachments: attachments.zip,git.diff,./target/cucumber-html-reports
+            attachments: |
+                        attachments.zip,git.diff,./target/gatling/simulation-20221221114326430/*
+                        attachments: attachments.zip,git.diff,./target/cucumber-html-reports
 
