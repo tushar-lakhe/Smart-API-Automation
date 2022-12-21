@@ -22,7 +22,7 @@ jobs:
           run: |
                 pwd
                 ls
-                cd D:/a/Smart-API-Automation/Smart-API-Automation/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController/DataValidators.py
+                cd D:/a/Smart-API-Automation/Smart-API-Automation/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController
                 ls
           
         - name: execute py script
