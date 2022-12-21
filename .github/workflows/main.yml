@@ -38,3 +38,63 @@ jobs:
         - name: Bat execute
           working-directory: D:/a/Smart-API-Automation/Smart-API-Automation/IdeaProjects/
           run: ./Run.bat
+          
+          name: run
+
+on: 
+    schedule:
+        - cron: '5 * * * *'
+
+jobs:
+ build:
+    runs-on: windows-latest
+    steps:
+        
+        - name: checkout repo content
+          uses: action/checkout@v2
+          
+        - name: setup python
+          uses: action/setup-python@v4
+          with: 
+            python-version: '3.9'
+          
+        - name: execute py script
+          run: python DataValidators.py
+          
+        - name: Send mail
+          uses: dawidd6/action-send-mail@v3
+          with:
+            # Specify connection via URL (replaces server_address, server_port, secure,
+            # username and password)
+            #
+            # Format:
+            #
+            #  * smtp://user:password@server:port
+            #  * smtp+starttls://user:password@server:port
+            connection_url: ${{secrets.MAIL_CONNECTION}}
+            # Required mail server address if not connection_url:
+            server_address: smtp.gmail.com
+            # Server port, default 25:
+            server_port: 465
+            # Optional whether this connection use TLS (default is true if server_port is 465)
+            secure: true
+            # Optional (recommended): mail server username:
+            username: tusharlakhe25@gmail.com
+            # Optional (recommended) mail server password:
+            password: Khushal@25
+            # Required mail subject:
+            subject: Github Actions job result
+            # Required recipients' addresses:
+            to: tusharlakhe1990@gmail.com
+            # Required sender full name (address can be skipped):
+            from: Luke Skywalker # <user@example.com>
+            # Optional plain body:
+            body: Build job of ${{github.repository}} completed successfully!
+            # Optional unsigned/invalid certificates allowance:
+            ignore_cert: true
+            # Optional converting Markdown to HTML (set content_type to text/html too):
+            convert_markdown: true
+            # Optional attachments:
+            attachments: attachments.zip,git.diff,./target/gatling/simulation-20221221114326430/*
+            attachments: attachments.zip,git.diff,./target/cucumber-html-reports
+
