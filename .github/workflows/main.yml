@@ -36,5 +36,5 @@ jobs:
                 dir
           
         - name: Bat execute
-          run: |
-                cmd D:/a/Smart-API-Automation/Smart-API-Automation/IdeaProjects/Run.bat
+          working-directory: D:/a/Smart-API-Automation/Smart-API-Automation/IdeaProjects/
+          run: ./Run.bat
