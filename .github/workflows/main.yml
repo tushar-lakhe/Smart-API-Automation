@@ -17,6 +17,17 @@ jobs:
           uses: actions/setup-python@v4
           with: 
             python-version: '3.9'
+          
+        - name: Install Py libs
+          run: |
+                pip3 install configparser
+                pip3 install webbrowser
+                pip3 install shutil
+                pip3 install datetime
+                pip3 install openpyxl
+                pip3 install ujson
+                pip3 install pathlib
+                pip3 install glob
         
         - name: List dir
           run: |
