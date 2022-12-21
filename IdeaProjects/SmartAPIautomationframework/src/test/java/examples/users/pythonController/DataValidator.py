@@ -9,7 +9,7 @@ ini_path = Path(__file__).parents[7]
 iniFilepath = os.path.join(ini_path,'config.ini').replace('\\', '/')
 
 for k, v in conf.url.items():
-# read parameter excel
+    # read parameter excel
     if k == "jsonforkarate":
         featureinputjson = v
 
@@ -37,7 +37,7 @@ for row in range(2, ws.max_row+1):
         if first_row[col-1] == "test_case_id":
             elm[first_row[col-1]]="rest_"+str(ws.cell(row=row,column=col).value)
         elif first_row[col-1] == "layered_call":
-             elm[first_row[col-1]]="rest_"+str(ws.cell(row=row,column=col).value)
+            elm[first_row[col-1]]="rest_"+str(ws.cell(row=row,column=col).value)
         elif first_row[col-1] == "json_payload":
             elm[first_row[col-1]]=str(ws.cell(row=row,column=col).value).replace('\n', ' ').replace('\r', '')
         else:
