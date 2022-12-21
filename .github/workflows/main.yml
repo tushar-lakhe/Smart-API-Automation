@@ -27,4 +27,4 @@ jobs:
           
         - name: execute py script
           run: |
-                python D:/a/Smart-API-Automation/Smart-API-Automation/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController/DataValidators.py
+                python D:/a/Smart-API-Automation/Smart-API-Automation/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController/DataValidator.py
