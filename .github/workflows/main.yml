@@ -35,6 +35,6 @@ jobs:
                 cd D:/a/Smart-API-Automation/Smart-API-Automation/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController
                 dir
           
-        - name: execute py script
+        - name: Bat execute
           run: |
-                python D:/a/Smart-API-Automation/Smart-API-Automation/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController/DataValidator.py
+                cmd D:/a/Smart-API-Automation/Smart-API-Automation/IdeaProjects/Run.bat
