@@ -27,7 +27,6 @@ jobs:
                 pip3 install openpyxl
                 pip3 install ujson
                 pip3 install pathlib
-                pip3 install glob
         
         - name: List dir
           run: |
