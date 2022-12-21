@@ -21,9 +21,9 @@ jobs:
         - name: List dir
           run: |
                 pwd
-                ls
+                dir
                 cd D:/a/Smart-API-Automation/Smart-API-Automation/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController
-                ls
+                dir
           
         - name: execute py script
           run: |
