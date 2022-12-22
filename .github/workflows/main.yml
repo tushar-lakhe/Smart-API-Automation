@@ -33,7 +33,7 @@ jobs:
                  
         - name: Smart Api Automation execute
           run: |
-                ./home/runner/work/Smart-API-Automation/Smart-API-Automation/IdeaProjects/Run.sh
+                ./IdeaProjects/Run.sh
                 shell: bash
     
         - name: Upload artifact 
