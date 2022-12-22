@@ -25,6 +25,11 @@ jobs:
                 pip3 install ujson
                 pip3 install pathlib
         
+        - name: List Dir
+          run: |
+                pwd
+                ls
+        
                  
         - name: Smart Api Automation execute
           working-directory: /home/runner/work/Smart-API-Automation/Smart-API-Automation/IdeaProjects/
