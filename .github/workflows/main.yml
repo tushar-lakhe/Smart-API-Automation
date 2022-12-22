@@ -28,22 +28,16 @@ jobs:
                 pip3 install ujson
                 pip3 install pathlib
         
-        - name: List dir
-          run: |
-                pwd
-                dir
-                cd D:/a/Smart-API-Automation/Smart-API-Automation/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController
-                dir
-          
-        - name: Bat execute
+                 
+        - name: Smart Api Automation execute
           working-directory: D:/a/Smart-API-Automation/Smart-API-Automation/IdeaProjects/
-          run: ./Run.bat
+          run: ./Run.bash
           
         - name: Upload artifact 
           uses: actions/upload-artifact@master
           with:
             name: my-artifact
             path: |
-                    target/gatling/
-                    target/cucumber-html-reports/
+                    target/gatling/*.*
+                    target/cucumber-html-reports/*.*
 
