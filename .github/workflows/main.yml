@@ -44,6 +44,6 @@ jobs:
           with:
             name: my-artifact
             path: |
-                    ./gatling/
-                    ./cucumber-html-reports/
+                    target/gatling/
+                    target/cucumber-html-reports/
 
