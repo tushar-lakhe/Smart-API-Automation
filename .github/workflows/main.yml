@@ -27,8 +27,8 @@ jobs:
         
                  
         - name: Smart Api Automation execute
-          working-directory: D:/a/Smart-API-Automation/Smart-API-Automation/IdeaProjects/
-          run: ./Run.bash
+          working-directory: /home/runner/work/Smart-API-Automation/Smart-API-Automation/IdeaProjects/
+          run: Run.bash
           
         - name: Upload artifact 
           uses: actions/upload-artifact@master
