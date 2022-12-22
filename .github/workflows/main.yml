@@ -33,6 +33,7 @@ jobs:
                  
         - name: Smart Api Automation execute
           run: |
+                chmod +x ./IdeaProjects/Run.sh
                 ./IdeaProjects/Run.sh
                 shell: bash
     
