@@ -32,9 +32,10 @@ jobs:
         
                  
         - name: Smart Api Automation execute
-          working-directory: /home/runner/work/Smart-API-Automation/Smart-API-Automation/IdeaProjects/
-          run: Run.bash
-          
+          run: |
+                /home/runner/work/Smart-API-Automation/Smart-API-Automation/IdeaProjects/Run.sh
+                shell: bash
+    
         - name: Upload artifact 
           uses: actions/upload-artifact@master
           with:
