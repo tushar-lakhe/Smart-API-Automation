@@ -35,7 +35,7 @@ now = datetime.datetime.now()
 timestamp = str(now.strftime("%Y%m%d_%H%M%S"))
 
 if len(os.listdir(testcases_api)) != 0:
-    os.chdir(os.path.join(ini_path,'SmartAPIautomationframework'))
+    os.chdir(os.path.join(ini_path,'IdeaProjects'))
     subprocess.run('mvn clean test')
     # report moving
     source_report = report
@@ -47,7 +47,7 @@ if len(os.listdir(testcases_api)) != 0:
     webbrowser.open_new_tab(os.path.join(historyreports,'cucumber_api',timestamp+"/",'overview-features.html'))
 
 if Path(os.path.join(simulation_file_path,'simulation.scala')).is_file():
-    os.chdir(os.path.join(ini_path,'SmartAPIautomationframework'))
+    os.chdir(os.path.join(ini_path,'IdeaProjects'))
     subprocess.run('mvn clean test-compile gatling:test')
     source_report = gatling_report_path
     destination_report = os.path.join(historyreports,'gatling_performance/',timestamp+"/")
