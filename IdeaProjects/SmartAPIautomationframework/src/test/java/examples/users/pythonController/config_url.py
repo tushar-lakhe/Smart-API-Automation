@@ -3,7 +3,7 @@ import configparser
 from pathlib import Path
 
 reportpath = Path(__file__).parents[6]
-path = '/'.join((os.path.abspath(__file__).replace('\\', '/')).split('/')[:-2])
+path = '/'.join((os.path.abspath(__file__).replace('\\', '/')).split('/')[:-1])
 config = configparser.ConfigParser()
 param_path = os.path.join(path,'inputData','ParameterFile.xlsx').replace('\\', '/')
 json_path = os.path.join(path,'intermidiateFiles','karate_src.json').replace('\\', '/')
