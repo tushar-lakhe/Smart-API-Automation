@@ -75,5 +75,5 @@ jobs:
           with:
             name: my-artifact
             path: |
-                   IdeaProjects/SmartAPIautomationframework/target/
+                   IdeaProjects/SmartAPIautomationframework/target/*
                     
