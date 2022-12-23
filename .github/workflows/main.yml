@@ -39,7 +39,7 @@ jobs:
                 ls
         
                  
-        - name: Smart Api Automation execute
+        - name: Smart Api Automation execution for Api Test
           run: |
                 echo "####################################################################################################"
                 echo "######################################  Initialising Test ##########################################"
@@ -76,7 +76,7 @@ jobs:
             path: |
                    IdeaProjects/SmartAPIautomationframework/target/cucumber-html-reports/*
                 
-        - name: Smart Api Automation execute
+        - name: Smart Api Automation execution for Perf Test
           run: | 
                cd IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController//
                python3 ReportGeneratorPerf.py
