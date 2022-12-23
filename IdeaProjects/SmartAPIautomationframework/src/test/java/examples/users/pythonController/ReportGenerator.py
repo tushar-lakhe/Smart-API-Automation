@@ -36,7 +36,7 @@ timestamp = str(now.strftime("%Y%m%d_%H%M%S"))
 
 if len(os.listdir(testcases_api)) != 0:
     os.chdir(os.path.join(ini_path,'SmartAPIautomationframework'))
-    subprocess.call(["mvn clean test"])
+    subprocess.run('mvn clean test')
     # report moving
     source_report = report
     destination_report = os.path.join(historyreports,'cucumber_api',timestamp+"/")
@@ -48,7 +48,7 @@ if len(os.listdir(testcases_api)) != 0:
 
 if Path(os.path.join(simulation_file_path,'simulation.scala')).is_file():
     os.chdir(os.path.join(ini_path,'SmartAPIautomationframework'))
-    subprocess.call(["mvn clean test-compile gatling:test"])
+    subprocess.run('mvn clean test-compile gatling:test')
     source_report = gatling_report_path
     destination_report = os.path.join(historyreports,'gatling_performance/',timestamp+"/")
     shutil.copytree(source_report, destination_report)
