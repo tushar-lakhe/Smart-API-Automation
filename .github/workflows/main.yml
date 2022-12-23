@@ -25,13 +25,10 @@ jobs:
                 pip3 install ujson
                 pip3 install pathlib
         
-        - name: Setup Maven Action
+        - name: Setup Maven 
           uses: s4u/setup-maven-action@v1.2.1
           with:
                 java-version: 8
-
-        - name: Build with Maven
-          run: mvn verify
           
         - name: List Dir
           run: |
