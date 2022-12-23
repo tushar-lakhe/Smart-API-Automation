@@ -37,7 +37,7 @@ timestamp = str(now.strftime("%Y%m%d_%H%M%S"))
 print(ini_path)
     
 if len(os.listdir(testcases_api)) != 0:
-    os.chdir(os.path.join(ini_path,'IdeaProjects'))
+    os.chdir(ini_path)
     subprocess.run('mvn clean test')
     # report moving
     source_report = report
