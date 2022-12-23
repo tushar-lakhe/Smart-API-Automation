@@ -75,6 +75,5 @@ jobs:
           with:
             name: my-artifact
             path: |
-                    target/gatling/*.*
-                    target/cucumber-html-reports/*.*
-
+                    /home/runner/work/Smart-API-Automation/Smart-API-Automation/target/cucumber-html-reports/
+                    
