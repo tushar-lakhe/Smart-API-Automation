@@ -3,9 +3,9 @@ import configparser
 from pathlib import Path
 
 reportpath = Path(__file__).parents[6]
-path = '/'.join((os.path.abspath(__file__).replace('\\', '/')).split('/')[:-1])
+path = '/'.join((os.path.abspath(__file__).replace('\\', '/')).split('/')[:-2])
 config = configparser.ConfigParser()
-param_path = os.path.join(path,'inputData','ParameterFile.xlsx').replace('\\', '/')
+param_path = os.path.join(path,'ParameterFile.xlsx').replace('\\', '/')
 json_path = os.path.join(path,'intermidiateFiles','karate_src.json').replace('\\', '/')
 testcases_path_api = os.path.join(path,'test_cases/api/').replace('\\', '/')
 testcases_path_perf = os.path.join(path,'test_cases/perf/').replace('\\', '/')
