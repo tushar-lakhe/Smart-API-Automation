@@ -38,7 +38,7 @@ print(ini_path)
     
 if len(os.listdir(testcases_api)) != 0:
     os.chdir(ini_path)
-    subprocess.run('mvn clean test')
+    os.system('mvn clean test')
     # report moving
     source_report = report
     destination_report = os.path.join(historyreports,'cucumber_api',timestamp+"/")
@@ -49,8 +49,8 @@ if len(os.listdir(testcases_api)) != 0:
     webbrowser.open_new_tab(os.path.join(historyreports,'cucumber_api',timestamp+"/",'overview-features.html'))
 
 if Path(os.path.join(simulation_file_path,'simulation.scala')).is_file():
-    os.chdir(os.path.join(ini_path,'IdeaProjects'))
-    subprocess.run('mvn clean test-compile gatling:test')
+    os.chdir(ini_path)
+    os.system('mvn clean test-compile gatling:test')
     source_report = gatling_report_path
     destination_report = os.path.join(historyreports,'gatling_performance/',timestamp+"/")
     shutil.copytree(source_report, destination_report)
