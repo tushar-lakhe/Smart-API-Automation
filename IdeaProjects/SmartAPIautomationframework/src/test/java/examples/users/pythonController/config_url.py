@@ -2,7 +2,7 @@ import os
 import configparser
 from pathlib import Path
 
-reportpath = Path(__file__).parents[5]
+reportpath = Path(__file__).parents[6]
 path = '/'.join((os.path.abspath(__file__).replace('\\', '/')).split('/')[:-2])
 config = configparser.ConfigParser()
 param_path = os.path.join(path,'ParameterFile.xlsx').replace('\\', '/')
