@@ -33,9 +33,8 @@ jobs:
                  
         - name: Smart Api Automation execute
           run: |
-                chmod +x ./IdeaProjects/Run.sh
-                ./IdeaProjects/Run.sh
-                shell: bash
+                chmod +x home/runner/work/Smart-API-Automation/Smart-API-Automation/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController/DataValidator.py
+                python3 home/runner/work/Smart-API-Automation/Smart-API-Automation/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController/DataValidator.py
     
         - name: Upload artifact 
           uses: actions/upload-artifact@master
