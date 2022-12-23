@@ -67,15 +67,20 @@ jobs:
                 echo "#################################### Test Execution Begins... ##############################################"
                 echo "############################################################################################################"
 
-                python3 ReportGenerator.py
-
-    
+                python3 ReportGeneratorAPI.py
+                
         - name: Karate Report 
           uses: actions/upload-artifact@v3
           with:
             name: my-artifact
             path: |
                    IdeaProjects/SmartAPIautomationframework/target/cucumber-html-reports/*
+                
+        - name: Smart Api Automation execute
+          run: | 
+               cd IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController//
+               python3 ReportGeneratorPerf.py
+                
                    
         - name: Gatling Report 
           uses: actions/upload-artifact@v3
