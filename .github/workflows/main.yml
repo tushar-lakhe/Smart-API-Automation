@@ -28,6 +28,7 @@ jobs:
         - name: List Dir
           run: |
                 pwd
+                which bash
                 ls
                 cd IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController
                 ls
@@ -35,8 +36,8 @@ jobs:
                  
         - name: Smart Api Automation execute
           run: |
-                cd IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController
-                python3 DataValidator.py
+                chmod +x /IdeaProjects/Run.sh
+                ./IdeaProjects/Run.sh
     
         - name: Upload artifact 
           uses: actions/upload-artifact@master
