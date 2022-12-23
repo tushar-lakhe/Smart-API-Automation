@@ -36,7 +36,10 @@ jobs:
                  
         - name: Smart Api Automation execute
           run: |
-                ./IdeaProjects/Run.sh
+                cd IdeaProjects
+                ls
+                chmod +x Run.sh
+                Run.sh
     
         - name: Upload artifact 
           uses: actions/upload-artifact@master
