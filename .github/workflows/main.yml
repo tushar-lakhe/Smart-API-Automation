@@ -36,10 +36,6 @@ jobs:
                  
         - name: Smart Api Automation execute
           run: |
-                cd IdeaProjects
-                ls
-                chmod +x Run.sh
-                bash Run.sh
                 cd IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController//
                 python DataValidator.py
 
