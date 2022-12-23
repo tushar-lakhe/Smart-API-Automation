@@ -3,7 +3,7 @@ import ujson as json
 import openpyxl as pd
 from pathlib import Path
 import configparser
-from examples.users import config_url as conf
+import config_url as conf
 
 ini_path = Path(__file__).parents[7]
 iniFilepath = os.path.join(ini_path,'config.ini').replace('\\', '/')
