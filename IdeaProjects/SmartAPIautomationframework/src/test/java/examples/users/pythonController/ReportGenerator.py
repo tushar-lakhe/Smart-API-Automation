@@ -3,7 +3,7 @@ import webbrowser
 import configparser
 import shutil
 import datetime
-import examples.users.config_url as conf
+import config_url as conf
 from pathlib import Path
 import glob
 import os
