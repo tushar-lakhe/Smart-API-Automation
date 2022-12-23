@@ -4,7 +4,8 @@ echo "##############################################################"
 echo "##############################################################"
 echo "#################  Validating user inputs ####################"
 echo "##############################################################"
-cd /home/runner/work/Smart-API-Automation/Smart-API-Automation/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController/
+cd SmartAPIautomationframework/src/test/java/examples/users/pythonController/
+ls
 python3 DataValidator.py
 echo "##############################################################"
 echo "############ User inputs validation Completed ################"
