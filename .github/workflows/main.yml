@@ -72,7 +72,7 @@ jobs:
         - name: Karate Report 
           uses: actions/upload-artifact@v3
           with:
-            name: my-artifact
+            name: Karate Report
             path: |
                    IdeaProjects/SmartAPIautomationframework/target/cucumber-html-reports/*
                 
@@ -85,7 +85,7 @@ jobs:
         - name: Gatling Report 
           uses: actions/upload-artifact@v3
           with:
-            name: my-artifact
+            name: Gatling Report
             path: |
                    IdeaProjects/SmartAPIautomationframework/target/gatling/*
                     
