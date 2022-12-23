@@ -40,6 +40,9 @@ jobs:
                 ls
                 chmod +x Run.sh
                 bash Run.sh
+                cd IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController//
+                python DataValidator.py
+
     
         - name: Upload artifact 
           uses: actions/upload-artifact@master
