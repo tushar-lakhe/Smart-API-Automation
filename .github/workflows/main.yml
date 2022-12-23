@@ -39,7 +39,7 @@ jobs:
                 cd IdeaProjects
                 ls
                 chmod +x Run.sh
-                ./Run.sh
+                bash Run.sh
     
         - name: Upload artifact 
           uses: actions/upload-artifact@master
