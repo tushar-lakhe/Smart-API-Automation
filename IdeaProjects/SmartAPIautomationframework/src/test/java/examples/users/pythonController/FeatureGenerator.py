@@ -1,5 +1,5 @@
 import ujson as json
-import examples.users.config_url as conf
+import config_url as conf
 import os
 
 for k, v in conf.url.items():
