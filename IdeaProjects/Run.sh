@@ -11,14 +11,12 @@ echo "##############################################################"
 echo "##############################################################"
 echo "############### Generating Feature Files... ##################"
 echo "##############################################################"
-cd /home/runner/work/Smart-API-Automation/Smart-API-Automation/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController/
-python3 FeatureGenerator.py
+python3 IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController/FeatureGenerator.py
 echo "##############################################################"
 echo "######### Feature Files Generated Successfully ###############"
 echo "##############################################################"
 echo "##############################################################"
 echo "############# Test Execution Begins... #######################"
 echo "##############################################################"
-cd /home/runner/work/Smart-API-Automation/Smart-API-Automation/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController/
-python3 ReportGenerator.py
+python3 IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController/ReportGenerator.py
 read -n 1 -p prompt
