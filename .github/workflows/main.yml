@@ -70,10 +70,17 @@ jobs:
                 python3 ReportGenerator.py
 
     
-        - name: Upload artifact 
+        - name: Karate Report 
           uses: actions/upload-artifact@v3
           with:
             name: my-artifact
             path: |
-                   IdeaProjects/SmartAPIautomationframework/target/*
+                   IdeaProjects/SmartAPIautomationframework/target/cucumber-html-reports/*
+                   
+        - name: Gatling Report 
+          uses: actions/upload-artifact@v3
+          with:
+            name: my-artifact
+            path: |
+                   IdeaProjects/SmartAPIautomationframework/target/gatling/*
                     
