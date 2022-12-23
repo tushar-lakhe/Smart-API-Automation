@@ -29,6 +29,8 @@ jobs:
           run: |
                 pwd
                 ls
+                cd home/runner/work/Smart-API-Automation/Smart-API-Automation/IdeaProjects/SmartAPIautomationframework/src/test/java/examples/users/pythonController
+                ls
         
                  
         - name: Smart Api Automation execute
