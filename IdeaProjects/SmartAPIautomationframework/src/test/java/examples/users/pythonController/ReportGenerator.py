@@ -34,6 +34,8 @@ for k, v in conf.url.items():
 now = datetime.datetime.now()
 timestamp = str(now.strftime("%Y%m%d_%H%M%S"))
 
+print(ini_path)
+    
 if len(os.listdir(testcases_api)) != 0:
     os.chdir(os.path.join(ini_path,'IdeaProjects'))
     subprocess.run('mvn clean test')
