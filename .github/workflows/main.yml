@@ -10,8 +10,7 @@ jobs:
                                
         - name: checkout repo content
           uses: actions/checkout@v3
-          with: |
-                repository: tushar-lakhe/Karate-Demo
+          with: 
                 repository: tushar-lakhe/Smart-API-Automation
           
         - name: setup python
