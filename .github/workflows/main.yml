@@ -7,22 +7,12 @@ jobs:
  Test:
     runs-on: ubuntu-latest
     steps:
-        
+                               
         - name: checkout repo content
           uses: actions/checkout@v3
-          with:
-            repository: tushar-lakhe/Karate-Demo
-        
-        - name: List Dir
-          run: |
-                pwd
-                which bash
-                ls
-                        
-        - name: checkout repo content
-          uses: actions/checkout@v3
-          with:
-            repository: tushar-lakhe/Smart-API-Automation
+          with: |
+                repository: tushar-lakhe/Karate-Demo
+                repository: tushar-lakhe/Smart-API-Automation
           
         - name: setup python
           uses: actions/setup-python@v4
