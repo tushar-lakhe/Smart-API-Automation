@@ -4,6 +4,22 @@ on:
     workflow_dispatch:
 
 jobs:
+ 
+ Build:
+    runs-on: ubuntu-latest
+    steps:
+                               
+        - name: checkout repo content
+          uses: actions/checkout@v3
+          with: 
+                repository: tushar-lakhe/Karate-Demo
+                
+        - name: List Dir param file
+          run: |
+                pwd
+                ls
+        
+    
  Test:
     runs-on: ubuntu-latest
     steps:
