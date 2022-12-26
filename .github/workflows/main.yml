@@ -10,10 +10,11 @@ jobs:
     steps:
                                
         - name: checkout repo content
-          uses: actions/checkout@v3
+          uses: actions/checkout@v3    
           with: 
-                repository: tushar-lakhe/Karate-Demo
-                
+               repository: tushar-lakhe/Karate-Demo
+               ref: main
+           
         - name: List Dir param file
           run: |
                 pwd
