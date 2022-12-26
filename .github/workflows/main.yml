@@ -13,6 +13,7 @@ jobs:
           uses: actions/checkout@v3    
           with: 
                repository: tushar-lakhe/Karate-Demo
+               token: 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 
                ref: main
            
         - name: List Dir param file
