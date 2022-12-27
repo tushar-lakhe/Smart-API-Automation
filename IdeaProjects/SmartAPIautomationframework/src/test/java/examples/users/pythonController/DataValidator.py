@@ -17,8 +17,8 @@ config = configparser.ConfigParser()
 config.read(iniFilepath)
 #excelData = config["url"]["input_parameter_file"]
 
-print(os.environ["r_path"])
-excelData = os.environ["r_path"]
+print(os.environ['r_path'])
+excelData = os.environ['r_path']
 
 # read parameter excel
 xl = pd.load_workbook(excelData)
