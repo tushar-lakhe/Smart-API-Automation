@@ -13,14 +13,6 @@ for k, v in conf.url.items():
     if k == "jsonforkarate":
         featureinputjson = v
 
-config = configparser.ConfigParser()
-config.read(iniFilepath)
-#excelData = config["url"]["input_parameter_file"]
-
-
-print(os.getcwd())
-print(ini_path)
-
 # read parameter excel
 xl = pd.load_workbook(iniFilepath)
 ws = xl['rest_api']
