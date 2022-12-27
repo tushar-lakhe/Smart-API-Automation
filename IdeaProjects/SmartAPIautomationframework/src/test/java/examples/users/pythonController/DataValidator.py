@@ -6,7 +6,7 @@ import configparser
 import config_url as conf
 
 ini_path = Path(__file__).parents[7]
-iniFilepath = os.path.join(ini_path,'config.ini').replace('\\', '/')
+iniFilepath = os.path.join(ini_path,'ParameterFile.xlsx').replace('\\', '/')
 
 for k, v in conf.url.items():
     # read parameter excel
@@ -18,10 +18,11 @@ config.read(iniFilepath)
 #excelData = config["url"]["input_parameter_file"]
 
 
-print("You are here"+os.environ['r_path'])
+print(os.getcwd())
+print(ini_path)
 
 # read parameter excel
-xl = pd.load_workbook(excelData)
+xl = pd.load_workbook(iniFilepath)
 ws = xl['rest_api']
 ws1 = xl['message_queue']
 first_row = []
