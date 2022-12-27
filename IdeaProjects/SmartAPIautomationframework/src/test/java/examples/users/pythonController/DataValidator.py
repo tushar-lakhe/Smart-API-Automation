@@ -15,7 +15,10 @@ for k, v in conf.url.items():
 
 config = configparser.ConfigParser()
 config.read(iniFilepath)
-excelData = config["url"]["input_parameter_file"]
+#excelData = config["url"]["input_parameter_file"]
+
+excelData = os.environ["r_path"]
+
 
 # read parameter excel
 xl = pd.load_workbook(excelData)
