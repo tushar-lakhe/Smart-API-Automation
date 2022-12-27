@@ -17,7 +17,6 @@ config = configparser.ConfigParser()
 config.read(iniFilepath)
 #excelData = config["url"]["input_parameter_file"]
 
-excelData = os.environ['r_path']
 
 print("You are here"+os.environ['r_path'])
 
