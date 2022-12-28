@@ -6,21 +6,11 @@ from pathlib import Path
 import configparser
 import config_url as conf
 
-"""
-#ini_path = Path(__file__).parents[7]
+
+ini_path = Path(__file__).parents[8]
 #ini_path = os.environ['r_path']
 
-print(r_path)
-
-print(sys.argv)
-print("r_path is "+sys.argv[0])
-
-
-iniFilepath = os.path.join(r_path,'ParameterFile.xlsx').replace('\\', '/')"""
-
-filename = '../../../../../../../../ops/ParameterFile.xlsx'
-print(filename)
-
+iniFilepath = os.path.join("ops",'ParameterFile.xlsx').replace('\\', '/')"""
 
 
 for k, v in conf.url.items():
@@ -29,7 +19,7 @@ for k, v in conf.url.items():
         featureinputjson = v
 
 # read parameter excel
-xl = pd.load_workbook(filename)
+xl = pd.load_workbook(iniFilepath)
 ws = xl['rest_api']
 ws1 = xl['message_queue']
 first_row = []
