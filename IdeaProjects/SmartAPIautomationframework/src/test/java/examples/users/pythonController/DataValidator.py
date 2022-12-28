@@ -10,8 +10,9 @@ import config_url as conf
 #ini_path = os.environ['r_path']
 
 #print(ini_path)
-print('arguments',sys.argv)
-print('arguments',r_path)
+
+print(sys.argv)
+print("r_path is "+sys.argv[0])
 
 
 iniFilepath = os.path.join(r_path,'ParameterFile.xlsx').replace('\\', '/')
