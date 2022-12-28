@@ -10,7 +10,7 @@ import config_url as conf
 ini_path = Path(__file__).parents[8]
 #ini_path = os.environ['r_path']
 
-iniFilepath = os.path.join("ops",'ParameterFile.xlsx').replace('\\', '/')"""
+iniFilepath = os.path.join("ops",'ParameterFile.xlsx').replace('\\', '/')
 
 
 for k, v in conf.url.items():
