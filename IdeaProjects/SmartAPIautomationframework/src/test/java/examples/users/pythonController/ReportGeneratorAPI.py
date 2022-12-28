@@ -11,10 +11,10 @@ import subprocess
 
 ini_path = Path(__file__).parents[7]
 iniFilepath = os.path.join(ini_path,'config.ini').replace('\\', '/')
-config = configparser.ConfigParser()
-config.read(iniFilepath)
+#config = configparser.ConfigParser()
+#config.read(iniFilepath)
 #historytestcases = config["url"]["history_testcases"]
-historyreports = config["url"]["history_report"]
+#historyreports = config["url"]["history_report"]
 
 for k, v in conf.url.items():
     # read parameter excel
