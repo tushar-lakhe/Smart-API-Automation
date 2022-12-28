@@ -12,7 +12,7 @@ ini_path = Path(__file__).parents[8]
 
 iniFilepath = os.path.join('ops','ParameterFile.xlsx').replace('\\', '/')
 
-print(iniFilepath)
+print("here"+iniFilepath)
 
 
 for k, v in conf.url.items():
