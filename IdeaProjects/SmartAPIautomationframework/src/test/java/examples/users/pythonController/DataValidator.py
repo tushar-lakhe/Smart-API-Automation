@@ -11,10 +11,10 @@ import config_url as conf
 
 #print(ini_path)
 print('arguments',sys.argv)
-print('arguments',sys.r_path)
+print('arguments',r_path)
 
 
-iniFilepath = os.path.join(sys.r_path,'ParameterFile.xlsx').replace('\\', '/')
+iniFilepath = os.path.join(r_path,'ParameterFile.xlsx').replace('\\', '/')
 
 for k, v in conf.url.items():
     # read parameter excel
