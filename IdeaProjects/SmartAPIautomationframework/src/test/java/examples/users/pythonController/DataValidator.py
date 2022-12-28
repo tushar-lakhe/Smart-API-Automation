@@ -5,11 +5,12 @@ import openpyxl as pd
 from pathlib import Path
 import configparser
 import config_url as conf
+from sys import r_path 
 
 #ini_path = Path(__file__).parents[7]
 #ini_path = os.environ['r_path']
 
-#print(ini_path)
+print(r_path)
 
 print(sys.argv)
 print("r_path is "+sys.argv[0])
