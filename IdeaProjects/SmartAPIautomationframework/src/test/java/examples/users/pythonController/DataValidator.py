@@ -5,7 +5,7 @@ from pathlib import Path
 import configparser
 import config_url as conf
 
-ini_path = Path(__file__).parents[7]
+#ini_path = Path(__file__).parents[7]
 iniFilepath = os.path.join(r_path,'ParameterFile.xlsx').replace('\\', '/')
 
 for k, v in conf.url.items():
