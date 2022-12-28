@@ -5,8 +5,8 @@ import openpyxl as pd
 from pathlib import Path
 import configparser
 import config_url as conf
-from sys import r_path 
 
+"""
 #ini_path = Path(__file__).parents[7]
 #ini_path = os.environ['r_path']
 
@@ -16,7 +16,12 @@ print(sys.argv)
 print("r_path is "+sys.argv[0])
 
 
-iniFilepath = os.path.join(r_path,'ParameterFile.xlsx').replace('\\', '/')
+iniFilepath = os.path.join(r_path,'ParameterFile.xlsx').replace('\\', '/')"""
+
+filename = '../../../../../../../../ops/ParameterFile.xlsx'
+print(filename)
+
+
 
 for k, v in conf.url.items():
     # read parameter excel
