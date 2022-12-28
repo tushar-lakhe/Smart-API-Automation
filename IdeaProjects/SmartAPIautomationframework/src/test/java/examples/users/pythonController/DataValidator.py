@@ -29,7 +29,7 @@ for k, v in conf.url.items():
         featureinputjson = v
 
 # read parameter excel
-xl = pd.load_workbook(iniFilepath)
+xl = pd.load_workbook(filename)
 ws = xl['rest_api']
 ws1 = xl['message_queue']
 first_row = []
