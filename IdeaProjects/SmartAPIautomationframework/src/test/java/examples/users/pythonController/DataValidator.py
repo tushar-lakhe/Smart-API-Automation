@@ -6,9 +6,9 @@ import configparser
 import config_url as conf
 
 #ini_path = Path(__file__).parents[7]
-ini_path = os.environ['r_path']
+#ini_path = os.environ['r_path']
 
-print(ini_path)
+#print(ini_path)
 print('arguments',sys.argv)
 
 iniFilepath = os.path.join(ini_path,'ParameterFile.xlsx').replace('\\', '/')
