@@ -6,7 +6,12 @@ import configparser
 import config_url as conf
 
 #ini_path = Path(__file__).parents[7]
-iniFilepath = os.path.join("$r_path",'ParameterFile.xlsx').replace('\\', '/')
+ini_path = os.environ['r_path']
+
+print(ini_path)
+print('arguments',sys.argv)
+
+iniFilepath = os.path.join(ini_path,'ParameterFile.xlsx').replace('\\', '/')
 
 for k, v in conf.url.items():
     # read parameter excel
