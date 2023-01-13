@@ -271,7 +271,7 @@ if os.path.exists(os.path.join(simulation_file_path, 'simulation.scala').replace
         if j["number_of_concurrent_users"] != None and j["duration_of_run_in_seconds"] != None and (
                 j["execution_flag"] == "Performance" or j["execution_flag"] == "Both"):
             #file2.write(j["test_case_id"] + '.inject(constantConcurrentUsers(' + str(
-            file2.write(j["test_case_id"] + '.inject(rampUsers(' + str(
+            file2.write(j["test_case_id"] + '.inject(constantUsersPerSec(' + str(
                 j["number_of_concurrent_users"]) + ') during(' + str(
                 j["duration_of_run_in_seconds"]) + '.seconds)),\n\t\t')
     file2.write('\n\t)\n}')
