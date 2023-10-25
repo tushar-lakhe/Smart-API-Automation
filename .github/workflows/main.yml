@@ -31,7 +31,7 @@ jobs:
               uses: actions/checkout@v3
               with:
                 repository: tushar-lakhe/Smart-API-Automation
-                token: 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
+                token: ${{ secrets.Git_access }} 
                 path: IdeaProjects
 
 
