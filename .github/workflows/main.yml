@@ -1,4 +1,4 @@
-name: Smart API Automation Perf test
+name: Smart API Automation FW test
 # Controls when the workflow will run
 on:
     workflow_dispatch:
