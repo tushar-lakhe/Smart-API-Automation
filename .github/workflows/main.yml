@@ -12,9 +12,9 @@ jobs:
         - name: checkout repo content
           uses: actions/checkout@v3    
           with: 
-               repository: tushar-lakhe/Karate-Demo
-               token: ${{secrets.access_karate_demo}} 
-               ref: main
+                repository: tushar-lakhe/Karate-Demo
+                token: ${{ secrets.access_karate_demo }} 
+                path: Karate-Demo
            
         - name: List Dir param file
           run: |
