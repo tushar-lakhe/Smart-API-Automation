@@ -36,48 +36,4 @@ jobs:
 
 
 
-            - name: Smart Api Automation execution for Api Test/Regression
-              run: |
-                    echo "####################################################################################################"
-                    echo "######################################  Initialising Test ##########################################"
-                    echo "####################################################################################################"
-                    echo "####################################################################################################"
-                    echo "####################################  Validating user inputs #######################################"
-                    echo "####################################################################################################"
-                    cd IdeaProjects/IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController//
-                    python DataValidator.py
-                    echo "####################################################################################################"
-                    echo "############################### User inputs validation Completed ###################################"
-                    echo "####################################################################################################"
-                    echo "####################################################################################################"
-                    echo "################################## Generating Feature Files... #####################################"
-                    echo "####################################################################################################"
-                    python3 FeatureGenerator.py
-
-                    echo "####################################################################################################"
-                    echo "################################## Feature Files Generated Successfully ##################################"
-                    echo "##############################################################"
-                    echo "####################################################################################################"
-                    echo "#################################### Test Execution Begins... ##############################################"
-                    echo "############################################################################################################"
-                    python3 ReportGeneratorAPI.py
-
-            - name: Generate and Upload Karate Report 
-              uses: actions/upload-artifact@v3
-              with:
-                name: Karate Report
-                path: |
-                       IdeaProjects/IdeaProjects/SmartAPIautomationframework/target/cucumber-html-reports/*
-
-            - name: Smart Api Automation execution for Perf Test
-              run: | 
-                   cd IdeaProjects/IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController//
-                   python3 ReportGeneratorPerf.py
-
-
-            - name: Generate and Upload Gatling Report 
-              uses: actions/upload-artifact@v3
-              with:
-                name: Gatling Report
-                path: |
-                       IdeaProjects/IdeaProjects/SmartAPIautomationframework/target/gatling/*
+            
