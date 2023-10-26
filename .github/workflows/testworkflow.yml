@@ -50,7 +50,7 @@ jobs:
                 echo "####################################################################################################"
                 echo "####################################  Validating user inputs #######################################"
                 echo "####################################################################################################"
-                cd work/Smart-API-Automation/Smart-API-Automation/IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController//
+                cd work/Smart-API-Automation/Smart-API-Automation/IdeaProjects/IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController//
                 python DataValidator.py
                 echo "####################################################################################################"
                 echo "############################### User inputs validation Completed ###################################"
@@ -80,7 +80,7 @@ jobs:
                 
         - name: Smart Api Automation execution for Perf Test
           run: | 
-               cd IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController//
+               cd IdeaProjects/IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController//
                python3 ReportGeneratorPerf.py
                 
                    
