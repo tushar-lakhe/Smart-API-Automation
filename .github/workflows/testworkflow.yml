@@ -38,6 +38,7 @@ jobs:
                 pwd
                 ls
                 cd IdeaProjects/IdeaProjects/SmartAPIautomationframework
+                pwd
                 ls
                            
             
