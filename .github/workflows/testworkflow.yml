@@ -26,7 +26,7 @@ jobs:
                 java-version: 8          
 
         - name: checkout repo content
-          uses: actions/checkout@v4
+          uses: actions/checkout@v3
           with:
             repository: tushar-lakhe/Smart-API-Automation
             repo-token: ${{ secrets.GIT_ACTIONS }} 
