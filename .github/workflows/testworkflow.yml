@@ -37,13 +37,9 @@ jobs:
                 |
                 pwd
                 ls
-                cd 
+                cd IdeaProjects/IdeaProjects/SmartAPIautomationframework
                 ls
-                pwd
-                cd work/Smart-API-Automation/Smart-API-Automation/IdeaProjects/IdeaProjects
-                pwd
-                ls
-                
+                           
             
         - name: Smart Api Automation execution for Api Test
           run: |
