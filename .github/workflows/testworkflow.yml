@@ -37,7 +37,10 @@ jobs:
                 |
                 pwd
                 ls
-                cd
+                cd 
+                pwd
+                cd IdeaProjects
+                pwd
             
         - name: Smart Api Automation execution for Api Test
           run: |
