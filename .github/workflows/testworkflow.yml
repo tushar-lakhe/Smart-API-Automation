@@ -36,13 +36,7 @@ jobs:
           run: |
                 pwd
                 ls
-                echo "you are in main"
-                cd \IdeaProjects\SmartAPIautomationframework
-                pwd
-                ls
-                export r_path=$(pwd)
-                echo "$r_path"
-                echo "now u are here"
+               
             
         - name: Smart Api Automation execution for Api Test
           run: |
