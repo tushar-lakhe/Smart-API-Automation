@@ -40,7 +40,7 @@ jobs:
                 cd 
                 ls
                 pwd
-                cd work/Smart-API-Automation/Smart-API-Automation/IdeaProjects
+                cd work/Smart-API-Automation/Smart-API-Automation/IdeaProjects/IdeaProjects
                 pwd
                 ls
                 
