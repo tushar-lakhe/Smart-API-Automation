@@ -33,12 +33,12 @@ jobs:
             path: IdeaProjects
                    
         - name: List Dir
-          run: |
+          working-directory: ./IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController
+          run:
+              | 
                 pwd
                 ls
-                working-directory: ./IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController//
-                pwd
-               
+                cd
             
         - name: Smart Api Automation execution for Api Test
           run: |
