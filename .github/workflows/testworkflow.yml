@@ -36,6 +36,8 @@ jobs:
           run: |
                 pwd
                 ls
+                working-directory: ./IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController//
+                pwd
                
             
         - name: Smart Api Automation execution for Api Test
@@ -47,7 +49,7 @@ jobs:
                 echo "####################################################################################################"
                 echo "####################################  Validating user inputs #######################################"
                 echo "####################################################################################################"
-                cd IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController//
+                working-directory: IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController//
                 python DataValidator.py
                 echo "####################################################################################################"
                 echo "############################### User inputs validation Completed ###################################"
