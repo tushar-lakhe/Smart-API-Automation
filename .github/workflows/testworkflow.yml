@@ -1,0 +1,94 @@
+name: Smart API from diff repo
+
+on: 
+    workflow_dispatch:
+
+jobs:
+ Test:
+    runs-on: ubuntu-latest
+    steps:
+        
+        - name: setup python
+          uses: actions/setup-python@v4
+          with: 
+            python-version: '3.9'
+        
+        - name: Install Py libs
+          run: |
+                pip3 install datetime
+                pip3 install openpyxl
+                pip3 install ujson
+                pip3 install pathlib
+        
+        - name: Setup Maven 
+          uses: s4u/setup-maven-action@v1.2.1
+          with:
+                java-version: 8          
+
+        - name: checkout repo content
+          uses: actions/checkout@v4
+          with:
+            repository: tushar-lakhe/Smart-API-Automation
+            repo-token: ${{ secrets.GIT_ACTIONS }} 
+            path: IdeaProjects
+                   
+        - name: List Dir
+          run: |
+                pwd
+                cd IdeaProjects/SmartAPIautomationframework
+                ls
+                echo "you are here"
+                export r_path=$(pwd)
+                echo "$r_path"
+                echo "now u are here"
+            
+        - name: Smart Api Automation execution for Api Test
+          run: |
+                echo "####################################################################################################"
+                echo "######################################  Initialising Test ##########################################"
+                echo "####################################################################################################"
+
+                echo "####################################################################################################"
+                echo "####################################  Validating user inputs #######################################"
+                echo "####################################################################################################"
+                cd IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController//
+                python DataValidator.py
+                echo "####################################################################################################"
+                echo "############################### User inputs validation Completed ###################################"
+                echo "####################################################################################################"
+
+                echo "####################################################################################################"
+                echo "################################## Generating Feature Files... #####################################"
+                echo "####################################################################################################"
+                python3 FeatureGenerator.py
+                
+                echo "####################################################################################################"
+                echo "################################## Feature Files Generated Successfully ##################################"
+                echo "##############################################################"
+
+                echo "####################################################################################################"
+                echo "#################################### Test Execution Begins... ##############################################"
+                echo "############################################################################################################"
+
+                python3 ReportGeneratorAPI.py
+                
+        - name: Karate Report 
+          uses: actions/upload-artifact@v3
+          with:
+            name: Karate Report
+            path: |
+                   IdeaProjects/SmartAPIautomationframework/target/cucumber-html-reports/*
+                
+        - name: Smart Api Automation execution for Perf Test
+          run: | 
+               cd IdeaProjects/SmartAPIautomationframework//src//test//java//examples//users//pythonController//
+               python3 ReportGeneratorPerf.py
+                
+                   
+        - name: Gatling Report 
+          uses: actions/upload-artifact@v3
+          with:
+            name: Gatling Report
+            path: |
+                   IdeaProjects/SmartAPIautomationframework/target/gatling/*
+         
