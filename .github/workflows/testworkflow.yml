@@ -37,7 +37,7 @@ jobs:
                 pwd
                 ls
                 echo "you are in main"
-                cd Smart-API-Automation/IdeaProjects/
+                cd \IdeaProjects\SmartAPIautomationframework
                 pwd
                 ls
                 export r_path=$(pwd)
